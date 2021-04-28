@@ -13,7 +13,7 @@ const Bio = () => {
 				unique & challenging issues, particularly if it is for the betterment of
 				the planet. My primary focuses currently are blockchain technology &
 				music tech startups, as both are about to be revolutionized. Take a look
-				around the site, & please don't be stranger if you have any comments /
+				around the site, & please don't be a stranger if you have any comments /
 				questions!
 			</p>
 		</div>
