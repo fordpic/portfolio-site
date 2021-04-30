@@ -6,8 +6,8 @@ import Projects from './Components/Projects';
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>Ford Pickert's Website</header>
+		<div className='app'>
+			<header className='app-header'>Ford Pickert's Website</header>
 			<Bio />
 			<Contact />
 			<Projects />
