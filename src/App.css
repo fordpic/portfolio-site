@@ -2,6 +2,8 @@
 
 html {
 	background-image: url(https://images.unsplash.com/photo-1531333377070-c6575ba98c97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+	background-attachment: fixed;
+	background-repeat: repeat;
 	/* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover; */
@@ -16,23 +18,24 @@ html {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Oxygen', sans-serif;
+	color: white;
 }
 
 .app-header {
-	font-size: xx-large;
+	font-size: 44px;
 	margin: auto;
 	width: 75vw;
 	text-align: center;
 	padding: 25px 25px 25px 25px;
-	background-color: gray;
+	/* background-color: gray; */
 }
 
 .bio {
 	margin: auto;
 	width: 75vw;
 	text-align: center;
-	padding: 25px 25px 25px 25px;
-	background-color: orange;
+	padding: 25px 25px 50px 25px;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .contact {
@@ -40,7 +43,7 @@ html {
 	width: 75vw;
 	text-align: center;
 	padding: 25px 25px 25px 25px;
-	background-color: purple;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .project-info {
@@ -48,9 +51,29 @@ html {
 	width: 75vw;
 	text-align: center;
 	padding: 25px 25px 25px 25px;
-	background-color: salmon;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.project-header {
+	padding: 25px 25px 35px 25px;
+	font-size: 44px;
 }
 
 img {
 	max-width: 75%;
+	padding: 25px 25px 35px 25px;
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	font-size: 24px;
+	text-decoration: none;
+	color: silver;
+}
+
+a:hover {
+	color: gold;
 }

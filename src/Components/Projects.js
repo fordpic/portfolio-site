@@ -1,9 +1,10 @@
 import React from 'react';
 
-// Individual projects; exporting to ProjCard
+// Individual projects; exporting to App
 const Projects = () => {
 	return (
 		<div className='project-info'>
+			<h1 className='project-header'>Projects</h1>
 			<div className='job-finder'>
 				<h1>Job Finder</h1>
 				<img
@@ -21,7 +22,9 @@ const Projects = () => {
 					good to go!
 				</p>
 				<br />
-				<a href='https://main.d3r7d6c4tw4h5f.amplifyapp.com/'>
+				<a
+					className='job-link'
+					href='https://main.d3r7d6c4tw4h5f.amplifyapp.com/'>
 					Link to deployed app
 				</a>
 			</div>
@@ -43,7 +46,9 @@ const Projects = () => {
 					revisiting it in the near future to give it some touch ups.
 				</p>
 				<br />
-				<a href='https://crypto-whale-watcher.herokuapp.com/'>
+				<a
+					className='job-link'
+					href='https://crypto-whale-watcher.herokuapp.com/'>
 					Link to deployed app
 				</a>
 			</div>
@@ -63,7 +68,10 @@ const Projects = () => {
 					Sign up & post some of your favorites today!
 				</p>
 				<br />
-				<a href='https://music-review-frontend.herokuapp.com/' alt=''>
+				<a
+					className='job-link'
+					href='https://music-review-frontend.herokuapp.com/'
+					alt=''>
 					Link to deployed app
 				</a>
 			</div>
