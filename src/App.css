@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
-html {
+/* html {
 	background-image: url(https://images.unsplash.com/photo-1531333377070-c6575ba98c97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
 	background-attachment: fixed;
 	background-repeat: repeat;
 	/* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover; */
-	/* background-size: cover; */
-}
+/* background-size: cover; */
+/* } */
 
 .app {
 	display: grid;
@@ -18,50 +18,66 @@ html {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Oxygen', sans-serif;
-	color: white;
-}
-
-.app-header {
-	font-size: 44px;
-	margin: auto;
-	width: 75vw;
-	text-align: center;
-	padding: 25px 25px 25px 25px;
-	/* background-color: gray; */
+	color: black;
 }
 
 .bio {
 	margin: auto;
-	width: 75vw;
+	width: 100vw;
 	text-align: center;
 	padding: 25px 25px 50px 25px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: #ed6a5a;
 }
 
-.contact {
-	margin: auto;
-	width: 75vw;
-	text-align: center;
-	padding: 25px 25px 25px 25px;
-	background-color: rgba(0, 0, 0, 0.7);
+.project-header {
+	font-size: 50px;
+	padding-top: 15px;
 }
 
 .project-info {
 	margin: auto;
-	width: 75vw;
+	width: 100vw;
 	text-align: center;
-	padding: 25px 25px 25px 25px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: #9bc1bc;
 }
 
-.project-header {
-	padding: 25px 25px 35px 25px;
-	font-size: 44px;
+.job-finder {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.whale-watcher {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.deep-dive {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.contact {
+	margin: auto;
+	width: 100vw;
+	text-align: center;
+	background-color: #f4f1bb;
+}
+
+.contact a {
+	color: pink;
 }
 
 img {
-	max-width: 75%;
-	padding: 25px 25px 35px 25px;
+	max-width: 50%;
+	/* padding: 25px 25px 35px 25px; */
+	border: 5px solid #e6ebe0;
+	margin-bottom: 30px;
 }
 
 p {
@@ -71,9 +87,10 @@ p {
 a {
 	font-size: 24px;
 	text-decoration: none;
-	color: silver;
+	color: #f4f1bb;
 }
 
 a:hover {
 	color: gold;
+	background-color: lightcoral;
 }

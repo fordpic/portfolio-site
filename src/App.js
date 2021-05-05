@@ -8,7 +8,6 @@ import ProjCard from './Components/ProjCard';
 function App() {
 	return (
 		<div className='app'>
-			<header className='app-header'>Ford Pickert's Website</header>
 			<Bio />
 			<Projects />
 			<Contact />
