@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 // Individual projects; exporting to App
 const Projects = () => {
@@ -46,11 +47,14 @@ const Projects = () => {
 					revisiting it in the near future to give it some touch ups.
 				</p>
 				<br />
-				<a
+				<motion.a
+					whileHover={{ scale: 4.2 }}
+					whileTap={{ scale: 4.0 }}
+					style={{ x: 100 }}
 					className='job-link'
 					href='https://crypto-whale-watcher.herokuapp.com/'>
 					Link to deployed app
-				</a>
+				</motion.a>
 			</div>
 			<div className='deep-dive'>
 				<h1>deepDive Music App</h1>

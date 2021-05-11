@@ -29,9 +29,18 @@
 	background-color: #ed6a5a;
 }
 
+.currently {
+	margin: auto;
+	width: 100vw;
+	text-align: center;
+	padding: 25px 0px 50px 0px;
+	background-color: #808a9f;
+}
+
 .project-header {
 	font-size: 50px;
 	padding-top: 15px;
+	padding-bottom: 15px;
 	color: black;
 }
 
@@ -94,10 +103,29 @@ a {
 	color: #f4f1bb;
 }
 
-a:hover {
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 10px;
+	margin: 3rem;
+	text-align: center;
+	align-items: center;
+}
+
+li {
+	list-style-type: none;
+	padding: 30px;
+	margin: 3rem;
+	display: inline-block;
+	align-items: center;
+	text-align: center;
+}
+
+/* a:hover {
 	color: gold;
 	background-color: lightcoral;
-}
+} */
 
 h1 {
 	color: #664147;
