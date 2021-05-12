@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import {
-	motion,
-	MotionValue,
-	useTransform,
-	useViewportScroll,
-} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // Individual projects; exporting to App
 const Projects = () => {
 	const [shouldShowActions, setShouldShowActions] = useState(0);
 	const [lastYPos, setLastYPos] = useState(0);
 
-	const { scrollYProgress } = useViewportScroll();
-	const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+	// const { scrollYProgress } = useViewportScroll();
+	// const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -32,19 +27,12 @@ const Projects = () => {
 
 	return (
 		<div className='project-info'>
-			<motion.h1
-				className='project-header'
-				// transition={{ duration: 1.2, type: 'spring' }}
-			>
-				Projects
-			</motion.h1>
+			<motion.h1 className='project-header'>Projects</motion.h1>
 			<motion.div
 				className='job-finder'
 				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
 				initial={{ opacity: 0 }}
-				transition={{ opacity: { duration: 0.5 } }}
-				// style={{ opacity }}
-			>
+				transition={{ opacity: { duration: 0.5 } }}>
 				<h1>Job Finder</h1>
 				<img
 					src='https://user-images.githubusercontent.com/77935828/115999954-69537580-a5ab-11eb-933f-2cd5c154bc17.png'
@@ -61,11 +49,19 @@ const Projects = () => {
 					good to go!
 				</p>
 				<br />
-				<a
-					className='job-link'
-					href='https://main.d3r7d6c4tw4h5f.amplifyapp.com/'>
+				<motion.button
+					whileHover={{
+						scale: 1.1,
+						textShadow: '0px 0px 8px rgb(255, 255, 255)',
+						boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+					}}
+					onClick={() => {
+						<a
+							className='job-link'
+							href='https://main.d3r7d6c4tw4h5f.amplifyapp.com/'></a>;
+					}}>
 					Link to deployed app
-				</a>
+				</motion.button>
 			</motion.div>
 			<motion.div
 				className='whale-watcher'
@@ -94,13 +90,13 @@ const Projects = () => {
 				<motion.button
 					whileHover={{
 						scale: 1.1,
+						textShadow: '0px 0px 8px rgb(255, 255, 255)',
+						boxShadow: '0px 0px 8px rgb(255, 255, 255)',
 					}}
 					onClick={() => {
 						<a
 							className='job-link'
-							href='https://crypto-whale-watcher.herokuapp.com/'>
-							{/* Link to deployed app */}
-						</a>;
+							href='https://crypto-whale-watcher.herokuapp.com/'></a>;
 					}}>
 					Link to deployed app
 				</motion.button>
@@ -127,12 +123,20 @@ const Projects = () => {
 					Sign up & post some of your favorites today!
 				</p>
 				<br />
-				<a
-					className='job-link'
-					href='https://music-review-frontend.herokuapp.com/'
-					alt=''>
+				<motion.button
+					whileHover={{
+						scale: 1.1,
+						textShadow: '0px 0px 8px rgb(255, 255, 255)',
+						boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+					}}
+					onClick={() => {
+						<a
+							className='job-link'
+							href='https://music-review-frontend.herokuapp.com/'
+							alt=''></a>;
+					}}>
 					Link to deployed app
-				</a>
+				</motion.button>
 			</motion.div>
 		</div>
 	);
