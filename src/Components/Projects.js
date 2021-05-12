@@ -38,11 +38,14 @@ const Projects = () => {
 				className='job-finder'
 				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
 				initial={{ opacity: 0 }}
-				transition={{ opacity: { duration: 0.5 } }}>
-				<h1>Job Finder</h1>
-				<img
+				transition={{ opacity: { duration: 0.5 } }}
+				whileHover={{
+					scale: 1.1,
+				}}>
+				<motion.h1>Job Finder</motion.h1>
+				<motion.img
 					src='https://user-images.githubusercontent.com/77935828/115999954-69537580-a5ab-11eb-933f-2cd5c154bc17.png'
-					alt='Job Finder'></img>
+					alt='Job Finder'></motion.img>
 				<br />
 				<p>
 					Job Finder was the capstone project for my software immersive coding
@@ -74,12 +77,13 @@ const Projects = () => {
 				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
 				initial={{ opacity: 0 }}
 				transition={{ opacity: { duration: 0.5 } }}
-				// style={{ opacity }}
-			>
-				<h1>Crypto Whale Watcher</h1>
-				<img
+				whileHover={{
+					scale: 1.1,
+				}}>
+				<motion.h1>Crypto Whale Watcher</motion.h1>
+				<motion.img
 					src='https://camo.githubusercontent.com/afd498c4d06e8bd87b98caf4b9ff4e2fd3f3e7e8877ed3f413e920744b533f64/68747470733a2f2f6d656469612e6769742e67656e6572616c617373656d622e6c792f757365722f33343233312f66696c65732f35643331636338302d383539382d313165622d383935382d613434323066633761363466'
-					alt='Crypto Whale Watcher'></img>
+					alt='Crypto Whale Watcher'></motion.img>
 				<br />
 				<p>
 					Crypto Whale Watcher was a fun little project that I completed when I
@@ -112,12 +116,13 @@ const Projects = () => {
 				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
 				initial={{ opacity: 0 }}
 				transition={{ opacity: { duration: 0.5 } }}
-				// style={{ opacity }}
-			>
-				<h1>deepDive Music App</h1>
-				<img
+				whileHover={{
+					scale: 1.1,
+				}}>
+				<motion.h1>deepDive Music App</motion.h1>
+				<motion.img
 					src='https://user-images.githubusercontent.com/77953457/113584140-288dbf80-95f0-11eb-8560-0babd51733b6.png'
-					alt='deepDive'></img>
+					alt='deepDive'></motion.img>
 				<br />
 				<p>
 					deepDive was a music app that I created with three other partners from

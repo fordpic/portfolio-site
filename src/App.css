@@ -90,7 +90,8 @@ img {
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
+	max-width: 75vw;
 }
 
 a {
@@ -117,11 +118,6 @@ li {
 	align-items: center;
 	text-align: center;
 }
-
-/* a:hover {
-	color: gold;
-	background-color: lightcoral;
-} */
 
 h1 {
 	color: #664147;
