@@ -37,6 +37,12 @@
 	background-color: #808a9f;
 }
 
+.current-items img {
+	min-width: 50%;
+	/* border: 5px solid #e6ebe0; */
+	margin-bottom: 30px;
+}
+
 .project-header {
 	font-size: 50px;
 	padding-top: 15px;
