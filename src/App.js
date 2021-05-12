@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className='app'>
 			<Bio />
-			<Currently />
+			{/* <Currently /> */}
 			<Projects />
 			<Contact />
 		</div>

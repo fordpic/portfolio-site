@@ -6,7 +6,7 @@ const Projects = () => {
 	return (
 		<div className='project-info'>
 			<h1 className='project-header'>Projects</h1>
-			<div className='job-finder'>
+			<motion.div className='job-finder'>
 				<h1>Job Finder</h1>
 				<img
 					src='https://user-images.githubusercontent.com/77935828/115999954-69537580-a5ab-11eb-933f-2cd5c154bc17.png'
@@ -28,7 +28,7 @@ const Projects = () => {
 					href='https://main.d3r7d6c4tw4h5f.amplifyapp.com/'>
 					Link to deployed app
 				</a>
-			</div>
+			</motion.div>
 			<div className='whale-watcher'>
 				<h1>Crypto Whale Watcher</h1>
 				<img
@@ -47,14 +47,19 @@ const Projects = () => {
 					revisiting it in the near future to give it some touch ups.
 				</p>
 				<br />
-				<motion.a
-					whileHover={{ scale: 4.2 }}
-					whileTap={{ scale: 4.0 }}
-					style={{ x: 100 }}
-					className='job-link'
-					href='https://crypto-whale-watcher.herokuapp.com/'>
+				<motion.button
+					whileHover={{
+						scale: 1.1,
+					}}
+					onClick={() => {
+						<a
+							className='job-link'
+							href='https://crypto-whale-watcher.herokuapp.com/'>
+							{/* Link to deployed app */}
+						</a>;
+					}}>
 					Link to deployed app
-				</motion.a>
+				</motion.button>
 			</div>
 			<div className='deep-dive'>
 				<h1>deepDive Music App</h1>
