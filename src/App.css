@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
-/* html {
-	background-image: url(https://images.unsplash.com/photo-1531333377070-c6575ba98c97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
-	background-attachment: fixed;
-	background-repeat: repeat;
-	/* -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover; */
-/* background-size: cover; */
-/* } */
-
 .app {
 	display: grid;
 	grid-template-rows: auto;
@@ -135,4 +125,19 @@ li {
 
 h1 {
 	color: #664147;
+}
+
+button {
+	padding: 0.5em 3em;
+	border: 0.16em solid #ffffff;
+	margin: 0 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	transition: all 0.15s;
+	background-color: #9bc1bc;
 }

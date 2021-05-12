@@ -27,7 +27,13 @@ const Projects = () => {
 
 	return (
 		<div className='project-info'>
-			<motion.h1 className='project-header'>Projects</motion.h1>
+			<motion.h1
+				className='project-header'
+				initial={{ x: '-100vw' }}
+				animate={{ x: 0 }}
+				transition={{ duration: 1.2, type: 'spring' }}>
+				Projects
+			</motion.h1>
 			<motion.div
 				className='job-finder'
 				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
