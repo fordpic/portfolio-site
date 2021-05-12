@@ -50,22 +50,25 @@
 .job-finder {
 	margin-top: 70px;
 	margin-bottom: 70px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10em;
+	padding-right: 10em;
+	border: 0.12em solid #ffffff;
 }
 
 .whale-watcher {
 	margin-top: 70px;
 	margin-bottom: 70px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10em;
+	padding-right: 10em;
+	border: 0.12em solid #ffffff;
 }
 
 .deep-dive {
 	margin-top: 70px;
 	margin-bottom: 70px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 10em;
+	padding-right: 10em;
+	border: 0.12em solid #ffffff;
 }
 
 .contact {
@@ -91,7 +94,12 @@ img {
 
 p {
 	font-size: 16px;
-	max-width: 75vw;
+	max-width: 70%;
+	padding-left: 13em;
+	text-align: center;
+	justify-content: center;
+	justify-self: center;
+	display: block;
 }
 
 a {
