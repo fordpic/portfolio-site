@@ -1,12 +1,50 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import {
+	motion,
+	MotionValue,
+	useTransform,
+	useViewportScroll,
+} from 'framer-motion';
 
 // Individual projects; exporting to App
 const Projects = () => {
+	const [shouldShowActions, setShouldShowActions] = useState(0);
+	const [lastYPos, setLastYPos] = useState(0);
+
+	const { scrollYProgress } = useViewportScroll();
+	const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const yPos = window.scrollY;
+			const isScrollingUp = yPos > lastYPos;
+
+			setShouldShowActions(isScrollingUp);
+			setLastYPos(yPos);
+		};
+
+		window.addEventListener('scroll', handleScroll, false);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll, false);
+		};
+	}, [lastYPos]);
+
 	return (
 		<div className='project-info'>
-			<h1 className='project-header'>Projects</h1>
-			<motion.div className='job-finder'>
+			<motion.h1
+				className='project-header'
+				// transition={{ duration: 1.2, type: 'spring' }}
+			>
+				Projects
+			</motion.h1>
+			<motion.div
+				className='job-finder'
+				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
+				initial={{ opacity: 0 }}
+				transition={{ opacity: { duration: 0.5 } }}
+				// style={{ opacity }}
+			>
 				<h1>Job Finder</h1>
 				<img
 					src='https://user-images.githubusercontent.com/77935828/115999954-69537580-a5ab-11eb-933f-2cd5c154bc17.png'
@@ -29,7 +67,13 @@ const Projects = () => {
 					Link to deployed app
 				</a>
 			</motion.div>
-			<div className='whale-watcher'>
+			<motion.div
+				className='whale-watcher'
+				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
+				initial={{ opacity: 0 }}
+				transition={{ opacity: { duration: 0.5 } }}
+				// style={{ opacity }}
+			>
 				<h1>Crypto Whale Watcher</h1>
 				<img
 					src='https://camo.githubusercontent.com/afd498c4d06e8bd87b98caf4b9ff4e2fd3f3e7e8877ed3f413e920744b533f64/68747470733a2f2f6d656469612e6769742e67656e6572616c617373656d622e6c792f757365722f33343233312f66696c65732f35643331636338302d383539382d313165622d383935382d613434323066633761363466'
@@ -60,8 +104,14 @@ const Projects = () => {
 					}}>
 					Link to deployed app
 				</motion.button>
-			</div>
-			<div className='deep-dive'>
+			</motion.div>
+			<motion.div
+				className='deep-dive'
+				animate={{ opacity: shouldShowActions ? 1 : 0.3 }}
+				initial={{ opacity: 0 }}
+				transition={{ opacity: { duration: 0.5 } }}
+				// style={{ opacity }}
+			>
 				<h1>deepDive Music App</h1>
 				<img
 					src='https://user-images.githubusercontent.com/77953457/113584140-288dbf80-95f0-11eb-8560-0babd51733b6.png'
@@ -83,7 +133,7 @@ const Projects = () => {
 					alt=''>
 					Link to deployed app
 				</a>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
