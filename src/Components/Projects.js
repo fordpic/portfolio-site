@@ -6,9 +6,6 @@ const Projects = () => {
 	const [shouldShowActions, setShouldShowActions] = useState(0);
 	const [lastYPos, setLastYPos] = useState(0);
 
-	// const { scrollYProgress } = useViewportScroll();
-	// const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
-
 	useEffect(() => {
 		const handleScroll = () => {
 			const yPos = window.scrollY;

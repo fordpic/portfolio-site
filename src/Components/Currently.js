@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Not being used at the moment
 const Currently = () => {
 	return (
 		<div className='currently'>
